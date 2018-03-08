@@ -3,8 +3,11 @@ html, body {
 }
 
 .App {
-  display: flex;
   background: #546ebf;
+}
+
+.row {
+  display: flex;
 }
 
 .Left, .Right {

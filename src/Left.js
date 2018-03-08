@@ -1,10 +1,10 @@
 import React from 'react';
 import Foo from './Foo'
 
-const Left = () => (
+const Left = (props) => (
   <div className="Left box">
     <div>Left</div>
-    <Foo />
+    { props.children || <Foo left={props.leftIsSpecial} /> }
   </div>
 )
 

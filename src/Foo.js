@@ -1,10 +1,10 @@
 import React from 'react';
 import Bar from './Bar'
 
-const Foo = () => (
+const Foo = (props) => (
   <div className="Foo box">
     <div>Foo</div>
-    <Bar />
+    { props.children || <Bar hasSpecialFeatures={props.left} /> }
   </div>
 )
 

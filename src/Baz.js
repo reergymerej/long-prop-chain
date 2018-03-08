@@ -1,10 +1,10 @@
 import React from 'react';
 import Quux from './Quux'
 
-const Baz = () => (
+const Baz = (props) => (
   <div className="Baz box">
     <div>Baz</div>
-    <Quux />
+    { props.children || <Quux hasContextualOption={props.hasSpecialFeatures} /> }
   </div>
 )
 
