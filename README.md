@@ -1,3 +1,16 @@
+## Install
+
+```bash
+git clone https://github.com/reergymerej/long-prop-chain
+cd long-prop-chain && yarn
+```
+
+## Run
+
+```bash
+yarn start
+```
+
 ## Problem
 
 I want to show an element based on context.  The same component tree is used in
@@ -68,3 +81,8 @@ Build the component tree differently in each place.
   outside context
 * flattened structure, handlers flattened to highest shared level
 * duplicated structure, each place the structure is used it must be recreated
+
+
+### Context
+
+Use `context` in React.  This seems ideal, but it's not stable yet.
