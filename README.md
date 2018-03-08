@@ -39,7 +39,32 @@ We can pass props way down, but intermediate components will be responsible for
 them and won't necesarrily use them.
 
 
+-PROS-
+
+* explicit
+* It is clear what each component is by looking at it.
+* open to future expansion
+
+
+-CONS-
+
+* lots of wiring
+* intermediate components may not need the props
+
+
 
 ### Inversion of Control
 
 Build the component tree differently in each place.
+
+
+-PROS-
+
+* easy to set prop
+
+-CONS-
+
+* `children` magic everywhere, individual components are not understandable
+  outside context
+* flattened structure, handlers flattened to highest shared level
+* duplicated structure, each place the structure is used it must be recreated
