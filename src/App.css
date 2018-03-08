@@ -1,5 +1,10 @@
+html, body {
+  background: #546ebf;
+}
+
 .App {
   display: flex;
+  background: #546ebf;
 }
 
 .Left, .Right {
@@ -10,6 +15,7 @@
   border: 1px solid;
   padding: 1em;
   margin: 1em;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .special {
