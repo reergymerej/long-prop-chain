@@ -12,3 +12,12 @@
   margin: 1em;
 }
 
+.special {
+  color: #fff;
+  border: 1px solid salmon;
+  text-align: center;
+  margin: 1em;
+  height: 3em;
+  line-height: 3em;
+  background: #09f;
+}
